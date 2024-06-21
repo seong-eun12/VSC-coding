@@ -1,0 +1,24 @@
+*{
+    text-align: center;
+}
+
+html{
+    background-color: rgb(255, 228, 160);
+    font-size: 8px;
+}
+
+body{
+    width: 640px;
+    margin: auto;
+}
+
+h1{
+    font-size: 45px;
+}
+
+img{
+    border-radius: 150px;
+}
+p{
+    font-size: 1.3rem
+}
