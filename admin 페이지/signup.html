@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+    <link href="signup.css" rel="stylesheet">
+    <style>
+        /* 내부 스타일 시트 */
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #eaeaea;
+        }
+        .header h1 {
+            color: rgb(28, 26, 26);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>회원가입 양식</h1>
+    </div>
+    
+    <div id = "container">
+       
+        <form id = "form" action = "#">
+            <table class="table">
+                <tr>
+                    <th>아이디</th>
+                    <td>
+                        <input name="id" placeholder="아이디" autocomplete="off"required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>    
+                    <td>
+                        <input type="password" name="pw1" placeholder="비밀번호"required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>    
+                    <td>
+                        <input type="password" name="pw2" placeholder="비밀번호"required>
+                    </td>
+                </tr>
+            <tr>    
+                <th>이름</th>
+                <td>
+                    <input name="name" placeholder="사용자 이름"autocomplete="off" required>
+                </td>
+            </tr>
+            <tr>    
+                <th>성별</th>
+                <td> <!--name이 같은 라디오끼리는 하나만 선택 가능 , label을 통해 옆에 성별 적어줌-->
+                    <label>
+                    <input type="radio" name="gender" value="male" checked>남자
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" checked>여자
+                    </label>
+                </td>
+            </tr>
+            <tr>    
+                <th>전화번호</th>
+                <td>
+                    <input name="phone" placeholder="전화번호"autocomplete="off"required>
+                </td>
+            </tr>
+            <tr>    
+                <th>이메일</th>
+                <td>
+                    <input title="정확한 메일 주소를 작성해주세요" type="email" name="email"autocomplete="off"required>
+                </td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td>
+                    <input type="text" name="address" class="form-control" placeholder="주소를 입력하세요">
+                </td>
+            </tr>            
+
+
+
+            </table>
+            <div class="buttons">
+                <input type="submit" value="가입" class="btn" title="가입">
+                <input type="reset" value="리셋" class="btn" title="처음으로">
+            </div>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

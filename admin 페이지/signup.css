@@ -1,0 +1,113 @@
+/* 전체 스타일링 */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* 컨테이너 스타일링 */
+#container {
+    width: 600px;
+    margin: 60px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* 헤더 스타일링 */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #eaeaea;
+}
+
+.header h1 {
+    color: #1c1a1a;
+}
+
+/* 폼 스타일링 */
+form {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* 테이블 스타일링 */
+.table {
+    width: 80%;
+    margin: auto;
+}
+
+th {
+    width: 40%;
+    text-align: right;
+    padding: 5px;
+}
+
+td {
+    width: 60%;
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* 입력 필드 스타일링 */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #66afe9;
+}
+
+/* 라디오 버튼 스타일링 */
+input[type="radio"] {
+    width: initial;
+    margin-right: 10px;
+}
+
+/* 버튼 스타일링 */
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* 추가적인 스타일링 */
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+.buttons {
+    margin-top: 10px;
+    text-align: center;
+}
